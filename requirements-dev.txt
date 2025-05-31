@@ -1,0 +1,6 @@
+ruff  # noqa: F821
+black  # noqa: F821
+isort  # noqa: F821
+pytest  # noqa: F821
+httpx  # noqa: F821
+pytest-mock # noqa: F821

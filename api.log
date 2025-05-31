@@ -1,0 +1,148 @@
+2025-05-22T14:23:05.671Z | INFO     | uvicorn.error:62 - Application startup complete.
+2025-05-22T14:23:05.674Z | INFO     | uvicorn.error:215 - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-05-22T14:23:19.080Z | DEBUG    | api.routers.post:35 - SELECT posts.id, posts.body 
+FROM posts
+2025-05-22T14:23:19.085Z | INFO     | uvicorn.access:476 - 127.0.0.1:56798 - "GET /post HTTP/1.1" 200
+2025-05-22T14:25:38.211Z | DEBUG    | api.routers.post:35 - SELECT posts.id, posts.body 
+FROM posts
+2025-05-22T14:25:38.215Z | INFO     | uvicorn.access:476 - 127.0.0.1:56907 - "GET /post HTTP/1.1" 200
+2025-05-22T14:25:55.948Z | INFO     | uvicorn.error:263 - Shutting down
+2025-05-22T14:25:56.051Z | INFO     | uvicorn.error:67 - Waiting for application shutdown.
+2025-05-22T14:25:56.054Z | INFO     | uvicorn.error:76 - Application shutdown complete.
+2025-05-22T14:25:56.055Z | INFO     | uvicorn.error:93 - Finished server process [99942]
+2025-05-22T14:25:58.000Z | INFO     | uvicorn.error:62 - Application startup complete.
+2025-05-22T14:25:58.003Z | INFO     | uvicorn.error:215 - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-05-22T14:26:02.155Z | INFO     | api.routers.post:33 - Getting all posts
+2025-05-22T14:26:02.156Z | DEBUG    | api.routers.post:37 - SELECT posts.id, posts.body 
+FROM posts
+2025-05-22T14:26:02.160Z | INFO     | uvicorn.access:476 - 127.0.0.1:56934 - "GET /post HTTP/1.1" 200
+2025-05-22T14:27:51.013Z | INFO     | uvicorn.access:476 - 127.0.0.1:57036 - "GET /post/1 HTTP/1.1" 200
+2025-05-22T14:27:57.860Z | INFO     | uvicorn.error:263 - Shutting down
+2025-05-22T14:27:57.963Z | INFO     | uvicorn.error:67 - Waiting for application shutdown.
+2025-05-22T14:27:57.966Z | INFO     | uvicorn.error:76 - Application shutdown complete.
+2025-05-22T14:27:57.968Z | INFO     | uvicorn.error:93 - Finished server process [13765]
+2025-05-22T14:27:59.633Z | INFO     | uvicorn.error:62 - Application startup complete.
+2025-05-22T14:27:59.636Z | INFO     | uvicorn.error:215 - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-05-22T14:28:01.723Z | INFO     | api.routers.post:20 - Finding post with 1
+2025-05-22T14:28:01.726Z | DEBUG    | api.routers.post:24 - SELECT posts.id, posts.body 
+FROM posts 
+WHERE posts.id = :id_1
+2025-05-22T14:28:01.731Z | INFO     | uvicorn.access:476 - 127.0.0.1:57038 - "GET /post/1 HTTP/1.1" 200
+2025-05-22T14:35:25.685Z | INFO     | uvicorn.error:263 - Shutting down
+2025-05-22T14:35:25.789Z | INFO     | uvicorn.error:67 - Waiting for application shutdown.
+2025-05-22T14:35:25.792Z | INFO     | uvicorn.error:76 - Application shutdown complete.
+2025-05-22T14:35:25.794Z | INFO     | uvicorn.error:93 - Finished server process [23180]
+2025-05-22T14:35:27.088Z | INFO     | uvicorn.error:62 - Application startup complete.
+2025-05-22T14:35:27.091Z | INFO     | uvicorn.error:215 - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-05-22T14:35:31.908Z | INFO     | api.routers.post:82 - Getting post with comments
+2025-05-22T14:35:31.910Z | INFO     | api.routers.post:20 - Finding post with 1
+2025-05-22T14:35:31.911Z | DEBUG    | api.routers.post:24 - SELECT posts.id, posts.body 
+FROM posts 
+WHERE posts.id = :id_1
+2025-05-22T14:35:31.914Z | INFO     | api.routers.post:72 - Getting comments on post
+2025-05-22T14:35:31.915Z | DEBUG    | api.routers.post:76 - SELECT comments.id, comments.body, comments.post_id 
+FROM comments 
+WHERE comments.post_id = :post_id_1
+2025-05-22T14:35:31.919Z | INFO     | uvicorn.access:476 - 127.0.0.1:57310 - "GET /post/1 HTTP/1.1" 200
+2025-05-22T14:35:36.767Z | INFO     | uvicorn.access:476 - 127.0.0.1:57944 - "GET /post/w HTTP/1.1" 422
+2025-05-22T14:35:48.426Z | INFO     | api.routers.post:82 - Getting post with comments
+2025-05-22T14:35:48.428Z | INFO     | api.routers.post:20 - Finding post with 1
+2025-05-22T14:35:48.429Z | DEBUG    | api.routers.post:24 - SELECT posts.id, posts.body 
+FROM posts 
+WHERE posts.id = :id_1
+2025-05-22T14:35:48.432Z | INFO     | api.routers.post:72 - Getting comments on post
+2025-05-22T14:35:48.434Z | DEBUG    | api.routers.post:76 - SELECT comments.id, comments.body, comments.post_id 
+FROM comments 
+WHERE comments.post_id = :post_id_1
+2025-05-22T14:35:48.437Z | INFO     | uvicorn.access:476 - 127.0.0.1:57965 - "GET /post/1 HTTP/1.1" 200
+2025-05-22T14:35:52.789Z | INFO     | api.routers.post:82 - Getting post with comments
+2025-05-22T14:35:52.790Z | INFO     | api.routers.post:20 - Finding post with 2
+2025-05-22T14:35:52.791Z | DEBUG    | api.routers.post:24 - SELECT posts.id, posts.body 
+FROM posts 
+WHERE posts.id = :id_1
+2025-05-22T14:35:52.795Z | ERROR    | api.routers.post:87 - Post with id 2 not found
+2025-05-22T14:35:52.796Z | INFO     | uvicorn.access:476 - 127.0.0.1:57971 - "GET /post/2 HTTP/1.1" 404
+2025-05-22T14:36:09.724Z | INFO     | uvicorn.access:476 - 127.0.0.1:57981 - "GET /post/2/comments HTTP/1.1" 404
+2025-05-22T14:36:15.167Z | INFO     | uvicorn.access:476 - 127.0.0.1:57982 - "GET /post/1/comments HTTP/1.1" 404
+2025-05-22T14:36:23.039Z | INFO     | api.routers.post:55 - Creating comment
+2025-05-22T14:36:23.040Z | INFO     | api.routers.post:20 - Finding post with 1
+2025-05-22T14:36:23.042Z | DEBUG    | api.routers.post:24 - SELECT posts.id, posts.body 
+FROM posts 
+WHERE posts.id = :id_1
+2025-05-22T14:36:23.045Z | DEBUG    | api.routers.post:65 - INSERT INTO comments (body, post_id) VALUES (:body, :post_id)
+2025-05-22T14:36:23.049Z | INFO     | uvicorn.access:476 - 127.0.0.1:57987 - "POST /comment HTTP/1.1" 201
+2025-05-22T14:36:26.547Z | INFO     | api.routers.post:45 - Getting all posts
+2025-05-22T14:36:26.548Z | DEBUG    | api.routers.post:49 - SELECT posts.id, posts.body 
+FROM posts
+2025-05-22T14:36:26.550Z | INFO     | uvicorn.access:476 - 127.0.0.1:57989 - "GET /post HTTP/1.1" 200
+2025-05-22T14:36:31.823Z | INFO     | api.routers.post:72 - Getting comments on post
+2025-05-22T14:36:31.825Z | DEBUG    | api.routers.post:76 - SELECT comments.id, comments.body, comments.post_id 
+FROM comments 
+WHERE comments.post_id = :post_id_1
+2025-05-22T14:36:31.828Z | INFO     | uvicorn.access:476 - 127.0.0.1:57990 - "GET /post/1/comment HTTP/1.1" 200
+2025-05-22T14:36:42.442Z | INFO     | api.routers.post:72 - Getting comments on post
+2025-05-22T14:36:42.443Z | DEBUG    | api.routers.post:76 - SELECT comments.id, comments.body, comments.post_id 
+FROM comments 
+WHERE comments.post_id = :post_id_1
+2025-05-22T14:36:42.447Z | INFO     | uvicorn.access:476 - 127.0.0.1:58008 - "GET /post/2/comment HTTP/1.1" 200
+2025-05-22T14:36:51.220Z | INFO     | api.routers.post:72 - Getting comments on post
+2025-05-22T14:36:51.222Z | DEBUG    | api.routers.post:76 - SELECT comments.id, comments.body, comments.post_id 
+FROM comments 
+WHERE comments.post_id = :post_id_1
+2025-05-22T14:36:51.226Z | INFO     | uvicorn.access:476 - 127.0.0.1:58010 - "GET /post/3/comment HTTP/1.1" 200
+2025-05-22T14:37:01.357Z | INFO     | uvicorn.access:476 - 127.0.0.1:58012 - "GET /post/3/comments HTTP/1.1" 404
+2025-05-22T14:38:40.762Z | INFO     | uvicorn.access:476 - 127.0.0.1:58090 - "GET /post/30/comments HTTP/1.1" 404
+2025-05-22T14:38:50.005Z | INFO     | api.routers.post:82 - Getting post with comments
+2025-05-22T14:38:50.008Z | INFO     | api.routers.post:20 - Finding post with 30
+2025-05-22T14:38:50.009Z | DEBUG    | api.routers.post:24 - SELECT posts.id, posts.body 
+FROM posts 
+WHERE posts.id = :id_1
+2025-05-22T14:38:50.012Z | ERROR    | api.routers.post:87 - Post with id 30 not found
+2025-05-22T14:38:50.013Z | INFO     | uvicorn.access:476 - 127.0.0.1:58093 - "GET /post/30 HTTP/1.1" 404
+2025-05-22T14:39:00.356Z | INFO     | api.routers.post:72 - Getting comments on post
+2025-05-22T14:39:00.358Z | DEBUG    | api.routers.post:76 - SELECT comments.id, comments.body, comments.post_id 
+FROM comments 
+WHERE comments.post_id = :post_id_1
+2025-05-22T14:39:00.361Z | INFO     | uvicorn.access:476 - 127.0.0.1:58096 - "GET /post/3/comment HTTP/1.1" 200
+2025-05-22T14:39:20.430Z | INFO     | api.routers.post:72 - Getting comments on post
+2025-05-22T14:39:20.431Z | DEBUG    | api.routers.post:76 - SELECT comments.id, comments.body, comments.post_id 
+FROM comments 
+WHERE comments.post_id = :post_id_1
+2025-05-22T14:39:20.435Z | INFO     | uvicorn.access:476 - 127.0.0.1:58111 - "GET /post/31/comment HTTP/1.1" 200
+2025-05-22T16:17:40.176Z | INFO     | uvicorn.error:263 - Shutting down
+2025-05-22T16:17:40.282Z | INFO     | uvicorn.error:67 - Waiting for application shutdown.
+2025-05-22T16:17:40.285Z | INFO     | uvicorn.error:76 - Application shutdown complete.
+2025-05-22T16:17:40.286Z | INFO     | uvicorn.error:93 - Finished server process [57618]
+2025-05-22T16:27:01.001Z | INFO     | [-] uvicorn.error:62 - Application startup complete.
+2025-05-22T16:27:01.006Z | INFO     | [-] uvicorn.error:215 - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-05-22T16:27:19.673Z | INFO     | [a3bb4e6b] api.routers.post:45 - Getting all posts
+2025-05-22T16:27:19.674Z | DEBUG    | [a3bb4e6b] api.routers.post:49 - SELECT posts.id, posts.body 
+FROM posts
+2025-05-22T16:27:19.677Z | INFO     | [a3bb4e6b] uvicorn.access:476 - 127.0.0.1:51622 - "GET /post HTTP/1.1" 200
+2025-05-22T16:27:34.959Z | INFO     | [db969aad] api.routers.post:55 - Creating comment
+2025-05-22T16:27:34.961Z | INFO     | [db969aad] api.routers.post:20 - Finding post with 1
+2025-05-22T16:27:34.962Z | DEBUG    | [db969aad] api.routers.post:24 - SELECT posts.id, posts.body 
+FROM posts 
+WHERE posts.id = :id_1
+2025-05-22T16:27:34.963Z | DEBUG    | [db969aad] api.routers.post:64 - INSERT INTO comments (body, post_id) VALUES (:body, :post_id)
+2025-05-22T16:27:34.966Z | INFO     | [db969aad] uvicorn.access:476 - 127.0.0.1:51645 - "POST /comment HTTP/1.1" 201
+2025-05-22T16:27:46.493Z | INFO     | [347c4ad3] api.routers.post:45 - Getting all posts
+2025-05-22T16:27:46.494Z | DEBUG    | [347c4ad3] api.routers.post:49 - SELECT posts.id, posts.body 
+FROM posts
+2025-05-22T16:27:46.496Z | INFO     | [347c4ad3] uvicorn.access:476 - 127.0.0.1:51653 - "GET /post HTTP/1.1" 200
+2025-05-22T16:29:58.138Z | INFO     | [-] uvicorn.error:263 - Shutting down
+2025-05-22T16:29:58.243Z | INFO     | [-] uvicorn.error:67 - Waiting for application shutdown.
+2025-05-22T16:29:58.247Z | INFO     | [-] uvicorn.error:76 - Application shutdown complete.
+2025-05-22T16:29:58.248Z | INFO     | [-] uvicorn.error:93 - Finished server process [31317]
+{"asctime": "2025-05-22T16:33:33", "msecs": 32.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 62, "message": "Application startup complete."}
+{"asctime": "2025-05-22T16:33:33", "msecs": 37.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 215, "message": "Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)", "color_message": "Uvicorn running on \u001b[1m%s://%s:%d\u001b[0m (Press CTRL+C to quit)"}
+{"asctime": "2025-05-22T16:57:04", "msecs": 462.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 263, "message": "Shutting down"}
+{"asctime": "2025-05-22T16:57:04", "msecs": 569.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 67, "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-22T16:57:04", "msecs": 574.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 76, "message": "Application shutdown complete."}
+{"asctime": "2025-05-22T16:57:04", "msecs": 576.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 93, "message": "Finished server process [61701]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22T16:57:06", "msecs": 637.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 62, "message": "Application startup complete."}
+{"asctime": "2025-05-22T16:57:06", "msecs": 641.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 215, "message": "Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)", "color_message": "Uvicorn running on \u001b[1m%s://%s:%d\u001b[0m (Press CTRL+C to quit)"}
+{"asctime": "2025-05-22T16:57:07", "msecs": 753.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 263, "message": "Shutting down"}
+{"asctime": "2025-05-22T16:57:07", "msecs": 855.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 67, "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-22T16:57:07", "msecs": 856.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 76, "message": "Application shutdown complete."}
+{"asctime": "2025-05-22T16:57:07", "msecs": 856.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 93, "message": "Finished server process [70769]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
